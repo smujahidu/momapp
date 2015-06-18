@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MOMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblMom">
+          <Key>
+            <PropertyRef Name="MomID" />
+          </Key>
+          <Property Name="MomID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProjectID" Type="int" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="Subject" Type="varchar" MaxLength="200" />
+          <Property Name="Description" Type="nvarchar" MaxLength="2000" />
+          <Property Name="CreationDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblProjectInfo">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Name="ProjectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProjectName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="Status" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblUserInfo">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="20" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="RoleID" Type="int" />
+          <Property Name="ProjectID" Type="int" />
+        </EntityType>
+        <Association Name="FK__tblMom__ProjectI__0EA330E9">
+          <End Role="tblProjectInfo" Type="Self.tblProjectInfo" Multiplicity="0..1" />
+          <End Role="tblMom" Type="Self.tblMom" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblProjectInfo">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="tblMom">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tblMom__UserID__0F975522">
+          <End Role="tblUserInfo" Type="Self.tblUserInfo" Multiplicity="0..1" />
+          <End Role="tblMom" Type="Self.tblMom" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUserInfo">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblMom">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tblUserIn__Proje__09DE7BCC">
+          <End Role="tblProjectInfo" Type="Self.tblProjectInfo" Multiplicity="0..1" />
+          <End Role="tblUserInfo" Type="Self.tblUserInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblProjectInfo">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="tblUserInfo">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tblUserIn__RoleI__08EA5793">
+          <End Role="tblRole" Type="Self.tblRole" Multiplicity="0..1" />
+          <End Role="tblUserInfo" Type="Self.tblUserInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblUserInfo">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MOMModelStoreContainer">
+          <EntitySet Name="tblMom" EntityType="Self.tblMom" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblProjectInfo" EntityType="Self.tblProjectInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblRole" EntityType="Self.tblRole" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUserInfo" EntityType="Self.tblUserInfo" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__tblMom__ProjectI__0EA330E9" Association="Self.FK__tblMom__ProjectI__0EA330E9">
+            <End Role="tblProjectInfo" EntitySet="tblProjectInfo" />
+            <End Role="tblMom" EntitySet="tblMom" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tblMom__UserID__0F975522" Association="Self.FK__tblMom__UserID__0F975522">
+            <End Role="tblUserInfo" EntitySet="tblUserInfo" />
+            <End Role="tblMom" EntitySet="tblMom" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tblUserIn__Proje__09DE7BCC" Association="Self.FK__tblUserIn__Proje__09DE7BCC">
+            <End Role="tblProjectInfo" EntitySet="tblProjectInfo" />
+            <End Role="tblUserInfo" EntitySet="tblUserInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tblUserIn__RoleI__08EA5793" Association="Self.FK__tblUserIn__RoleI__08EA5793">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblUserInfo" EntitySet="tblUserInfo" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MOMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblMom">
+          <Key>
+            <PropertyRef Name="MomID" />
+          </Key>
+          <Property Name="MomID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProjectID" Type="Int32" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="Subject" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="CreationDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="tblProjectInfo" Relationship="Self.FK__tblMom__ProjectI__0EA330E9" FromRole="tblMom" ToRole="tblProjectInfo" />
+          <NavigationProperty Name="tblUserInfo" Relationship="Self.FK__tblMom__UserID__0F975522" FromRole="tblMom" ToRole="tblUserInfo" />
+        </EntityType>
+        <EntityType Name="tblProjectInfo">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Name="ProjectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="Boolean" />
+          <NavigationProperty Name="tblMoms" Relationship="Self.FK__tblMom__ProjectI__0EA330E9" FromRole="tblProjectInfo" ToRole="tblMom" />
+          <NavigationProperty Name="tblUserInfoes" Relationship="Self.FK__tblUserIn__Proje__09DE7BCC" FromRole="tblProjectInfo" ToRole="tblUserInfo" />
+        </EntityType>
+        <EntityType Name="tblRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tblUserInfoes" Relationship="Self.FK__tblUserIn__RoleI__08EA5793" FromRole="tblRole" ToRole="tblUserInfo" />
+        </EntityType>
+        <EntityType Name="tblUserInfo">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="RoleID" Type="Int32" />
+          <Property Name="ProjectID" Type="Int32" />
+          <NavigationProperty Name="tblMoms" Relationship="Self.FK__tblMom__UserID__0F975522" FromRole="tblUserInfo" ToRole="tblMom" />
+          <NavigationProperty Name="tblProjectInfo" Relationship="Self.FK__tblUserIn__Proje__09DE7BCC" FromRole="tblUserInfo" ToRole="tblProjectInfo" />
+          <NavigationProperty Name="tblRole" Relationship="Self.FK__tblUserIn__RoleI__08EA5793" FromRole="tblUserInfo" ToRole="tblRole" />
+        </EntityType>
+        <Association Name="FK__tblMom__ProjectI__0EA330E9">
+          <End Role="tblProjectInfo" Type="Self.tblProjectInfo" Multiplicity="0..1" />
+          <End Role="tblMom" Type="Self.tblMom" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblProjectInfo">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="tblMom">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tblMom__UserID__0F975522">
+          <End Role="tblUserInfo" Type="Self.tblUserInfo" Multiplicity="0..1" />
+          <End Role="tblMom" Type="Self.tblMom" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUserInfo">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblMom">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tblUserIn__Proje__09DE7BCC">
+          <End Role="tblProjectInfo" Type="Self.tblProjectInfo" Multiplicity="0..1" />
+          <End Role="tblUserInfo" Type="Self.tblUserInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblProjectInfo">
+              <PropertyRef Name="ProjectID" />
+            </Principal>
+            <Dependent Role="tblUserInfo">
+              <PropertyRef Name="ProjectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tblUserIn__RoleI__08EA5793">
+          <End Role="tblRole" Type="Self.tblRole" Multiplicity="0..1" />
+          <End Role="tblUserInfo" Type="Self.tblUserInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblUserInfo">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MOMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblMoms" EntityType="Self.tblMom" />
+          <EntitySet Name="tblProjectInfoes" EntityType="Self.tblProjectInfo" />
+          <EntitySet Name="tblRoles" EntityType="Self.tblRole" />
+          <EntitySet Name="tblUserInfoes" EntityType="Self.tblUserInfo" />
+          <AssociationSet Name="FK__tblMom__ProjectI__0EA330E9" Association="Self.FK__tblMom__ProjectI__0EA330E9">
+            <End Role="tblProjectInfo" EntitySet="tblProjectInfoes" />
+            <End Role="tblMom" EntitySet="tblMoms" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tblMom__UserID__0F975522" Association="Self.FK__tblMom__UserID__0F975522">
+            <End Role="tblUserInfo" EntitySet="tblUserInfoes" />
+            <End Role="tblMom" EntitySet="tblMoms" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tblUserIn__Proje__09DE7BCC" Association="Self.FK__tblUserIn__Proje__09DE7BCC">
+            <End Role="tblProjectInfo" EntitySet="tblProjectInfoes" />
+            <End Role="tblUserInfo" EntitySet="tblUserInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tblUserIn__RoleI__08EA5793" Association="Self.FK__tblUserIn__RoleI__08EA5793">
+            <End Role="tblRole" EntitySet="tblRoles" />
+            <End Role="tblUserInfo" EntitySet="tblUserInfoes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MOMModelStoreContainer" CdmEntityContainer="MOMEntities">
+          <EntitySetMapping Name="tblMoms">
+            <EntityTypeMapping TypeName="MOMModel.tblMom">
+              <MappingFragment StoreEntitySet="tblMom">
+                <ScalarProperty Name="MomID" ColumnName="MomID" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblProjectInfoes">
+            <EntityTypeMapping TypeName="MOMModel.tblProjectInfo">
+              <MappingFragment StoreEntitySet="tblProjectInfo">
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblRoles">
+            <EntityTypeMapping TypeName="MOMModel.tblRole">
+              <MappingFragment StoreEntitySet="tblRole">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUserInfoes">
+            <EntityTypeMapping TypeName="MOMModel.tblUserInfo">
+              <MappingFragment StoreEntitySet="tblUserInfo">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
