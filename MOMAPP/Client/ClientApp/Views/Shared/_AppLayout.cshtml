@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+    <link href="~/Scripts/OurScripts/GlobalSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+            <img src="~/Images/Green_Header.jpg" class="img-responsive" id="imgHeader" />
+        </div>
+        <div class="row" id="divbody">
+            @RenderBody()
+        </div>
+        <div class="row">
+            <img src="~/Images/curve-header.png" class="img-responsive" id="imgFooter" />
+        </div>
+    </div>
+    
+</body>
+</html>

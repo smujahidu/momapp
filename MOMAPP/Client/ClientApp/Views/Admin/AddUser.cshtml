@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "AddUser";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<title></title>
+<link href="~/Scripts/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    function AddUser() {
+        jQuery.support.cors = true;
+        var User = {
+            UserName: $('#uname').val(),
+            Password: $('#pwd').val(),
+            Email: $('#email').val()
+        };
+
+        $.ajax({
+            url: 'http://localhost:50933/api/Admin/User',
+            type: 'POST',
+
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'text/plain'
+            },
+
+            contentType: "application/json;charset=utf-8",
+            data: JSON.stringify(User),
+            success: function (data) {
+
+            },
+        });
+    }
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 well-sm">
+                        <br />
+                        <br />
+
+                        <h3 style="text-align:center">ADD USER</h3></br>
+                        <label for=""> UserName</label>
+                        <input class="form-control" name="UserName" id="uname" placeholder="UserName" type="text" /> <br />
+                        <label for=""> Password</label>
+                        <input class="form-control" name="Password" id="pwd" placeholder="Password" type="text" /> <br />
+                        <label for=""> EmailID</label>
+                        <input class="form-control" name="EmailId" id="email" placeholder="EmailId" type="text" /> <br />
+
+                        <label for=""> Project</label>
+                        <select class="form-control"></select>
+
+                        <label for=""> Role</label>
+                        <select class="form-control"></select>
+                        <br />
+                        <button class="btn btn-lg btn-primary btn-block" id="btn" type="submit" onclick="AddUser()"> ADD </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
+

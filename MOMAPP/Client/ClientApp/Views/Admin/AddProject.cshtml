@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "AddProject";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+<title></title>
+<link href="~/Scripts/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+    function SaveProject() {
+        jQuery.support.cors = true;
+        var projdetails = {
+            ProjectName: $('#txtaddEmpName').val(),
+            StartDate: $('#txtaddstartdate').val(),
+            Status: $('#txtaddstatus').val()
+        };
+
+        $.ajax({
+            url: 'http://localhost:50933/api/Admin/SaveProject/3',
+            type: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'text/plain'
+            },
+
+            data: JSON.stringify(projdetails),
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                 
+            },
+           
+        });
+    }
+    
+</script>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 well-sm">
+                        <br />
+                        <br />
+
+                        <h3 style="text-align:center">ADD PROJECT</h3></br>
+                        <label for=""> UserName</label>
+                        <input class="form-control" name="ProjectName" id="txtaddEmpName" placeholder="ProjectName" type="text" /> <br />
+                        <label for=""> Status</label>
+                        <input class="form-control" name="Status" id="txtaddstatus" placeholder="Status" type="text" /> <br />
+                       
+                        <label for=""> Start Date</label>
+                        <input type="date" id="txtaddstartdate"><br />
+                        <br />
+                        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="SaveProject()">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
