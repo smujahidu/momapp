@@ -7,40 +7,91 @@
 <title></title>
 <link href="~/Scripts/bootstrap.css" rel="stylesheet" />
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-<script type="text/javascript">
-    function AddUser() {
-        jQuery.support.cors = true;
-        var User = {
-            UserName: $('#uname').val(),
-            Password: $('#pwd').val(),
-            Email: $('#email').val()
-        };
 
-        $.ajax({
-            url: 'http://localhost:50933/api/Admin/User',
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+    <title></title>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            debugger;
+            $.ajax({
+            url: 'http://localhost:50933/api/Admin/GetRole',
             type: 'POST',
-
+            crossDomain: true, // enable this
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'text/plain'
             },
-
-            contentType: "application/json;charset=utf-8",
-            data: JSON.stringify(User),
+            //contentType: "application/json; charset=utf-8",
+            dataType: 'json',
+            //data: '{}',
+              
             success: function (data) {
-
+                var result =data;
+                alert(result.length);
+                //$.each(data.d, function(key, value) {
+                //    $("#ddlRole").append($("<option></option>").val(value.RoleID).html(value.RoleName));
+                //});
+                $("#ddlRole").append(
+                        $('<option/>', {
+                            value: 0,
+                            text: "select"
+                        })
+                    );
+                for (var i = 0; i < result.length; i++) {
+                    $("#ddlRole").append(
+                        $('<option/>', {
+                            value: result[i].RoleID,
+                            text: result[i].RoleName
+                        })
+                    );
+                }
+                //$.each(result, function () {
+                //    alert(resultRoleID );
+                //    $("#ddlRole").append(
+                //        $('<option/>', {
+                //            value: this.RoleID,
+                //            text: this.RoleName
+                //        })
+                //    );
+                //});
             },
+            error: function ajaxError(response) {
+                alert(response.status + ' ' + response.statusText);
+            }
         });
-    }
 
-</script>
+        function AddUser() {
+            jQuery.support.cors = true;
+            var User = {
+                UserName: $('#uname').val(),
+                Password: $('#pwd').val(),
+                Email: $('#email').val()
+            };
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
+            $.ajax({
+                url: 'http://localhost:50933/api/Admin/User',
+                type: 'POST',
+
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'text/plain'
+                },
+
+                contentType: "application/json;charset=utf-8",
+                data: JSON.stringify(User),
+                success: function (data) {
+
+                },
+            });
+        }
+        });
+    </script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1">
         <div>
             <div class="container">
 
@@ -61,7 +112,7 @@
                         <select class="form-control"></select>
 
                         <label for=""> Role</label>
-                        <select class="form-control"></select>
+                        <select class="form-control" id="ddlRole"></select>
                         <br />
                         <button class="btn btn-lg btn-primary btn-block" id="btn" type="submit" onclick="AddUser()"> ADD </button>
                     </div>
