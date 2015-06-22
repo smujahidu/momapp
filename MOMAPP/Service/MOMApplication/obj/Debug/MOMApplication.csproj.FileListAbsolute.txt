@@ -280,3 +280,6 @@ C:\Users\sushman\Documents\Visual Studio 2013\Projects\MOM\MOMAPP\MOMApplication
 C:\Users\sushman\Documents\Visual Studio 2013\Projects\MOM\MOMAPP\MOMApplication\obj\Debug\MOMApplication.csprojResolveAssemblyReference.cache
 C:\Users\sushman\Documents\Visual Studio 2013\Projects\MOM\MOMAPP\MOMApplication\obj\Debug\MOMApplication.dll
 C:\Users\sushman\Documents\Visual Studio 2013\Projects\MOM\MOMAPP\MOMApplication\obj\Debug\MOMApplication.pdb
+C:\Mom\Mom application\MOMAPP\Service\MOMApplication\obj\Debug\MOMApplication.csprojResolveAssemblyReference.cache
+C:\Mom\Mom application\MOMAPP\Service\MOMApplication\obj\Debug\MOMApplication.dll
+C:\Mom\Mom application\MOMAPP\Service\MOMApplication\obj\Debug\MOMApplication.pdb
