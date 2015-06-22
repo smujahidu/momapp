@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MOMAPI.POCO
+namespace MOMAPI.POCOS
 {
     public class SaveMom
     {

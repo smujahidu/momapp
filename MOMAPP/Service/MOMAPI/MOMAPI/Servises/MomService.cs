@@ -1,5 +1,4 @@
-﻿using MOMAPI.Models;
-using MOMAPI.POCO;
+﻿ using MOMAPI.Models;
 using MOMAPI.POCOS;
 using MOMAPI.Repositry;
 using System;
@@ -7,8 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-
-
+       
 
 namespace MOMAPI.Servises
 {
@@ -78,3 +76,4 @@ namespace MOMAPI.Servises
 
     }
 }
+    

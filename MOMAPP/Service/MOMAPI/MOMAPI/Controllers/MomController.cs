@@ -1,4 +1,4 @@
-﻿using MOMAPI.POCO;
+﻿
 using MOMAPI.POCOS;
 using MOMAPI.Servises;
 using System;
@@ -10,9 +10,6 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Script.Serialization;
 using System.Xml.Serialization;
-
-
-
 
 
 namespace MOMAPI.Controllers

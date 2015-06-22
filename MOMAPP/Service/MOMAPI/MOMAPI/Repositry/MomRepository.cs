@@ -4,12 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-
-
 namespace MOMAPI.Repositry
 {
 
-    public class MomRepository 
+    public class MomRepository
     {
 
 
@@ -20,7 +18,7 @@ namespace MOMAPI.Repositry
         {
             try
             {
-               List<tblProjectInfo> obj1 = new List<tblProjectInfo>();
+                List<tblProjectInfo> obj1 = new List<tblProjectInfo>();
                 var list = db.tblProjectInfoes.ToList();
                 foreach (var item in list)
                 {
@@ -45,15 +43,15 @@ namespace MOMAPI.Repositry
         //save mom form
         public bool savemom(tblMom mom)
         {
-           
+
             db.tblMoms.Add(mom);
-          var result= db.SaveChanges();
-          if (result > 0)
-              return true;
-          else
-              return false;
+            var result = db.SaveChanges();
+            if (result > 0)
+                return true;
+            else
+                return false;
         }
-       
+
 
 
         //getting list
@@ -61,7 +59,7 @@ namespace MOMAPI.Repositry
         {
 
             List<tblUserInfo> obj1 = new List<tblUserInfo>();
-            var list = db.tblUserInfoes.Where(a=>a.ProjectID==id).ToList();
+            var list = db.tblUserInfoes.Where(a => a.ProjectID == id).ToList();
             foreach (var item in list)
             {
                 tblUserInfo obj = new tblUserInfo();
@@ -84,7 +82,7 @@ namespace MOMAPI.Repositry
             mom.Subject = history.Subject;
             mom.Description = history.Description;
 
-           return mom;
+            return mom;
 
         }
 
