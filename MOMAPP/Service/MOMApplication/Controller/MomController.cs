@@ -46,13 +46,14 @@ namespace WebApplication5.Controllers
 
 
         [HttpPost]
-        public IHttpActionResult Getlist(HttpRequestMessage request)
+        public IHttpActionResult Getlist(int id)
         {
-            Dictionary<string, int> deseralizedObject = BindModel<Dictionary<string,int>>(request);
-            int result = 0;
-            if (deseralizedObject != null)
-                result = deseralizedObject["id"];
-            return Ok<List<User>>(service.Getlist(result));
+            //Dictionary<string, int> deseralizedObject = BindModel<Dictionary<string,int>>(request);
+            // int result = 0;
+            //if (deseralizedObject != null)
+            //    result = deseralizedObject["id"];
+
+            return Ok<List<User>>(service.Getlist(id));
 
         }
 
