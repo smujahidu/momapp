@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MOMApplication.Controllers;
+using MOMApplication.POCOS;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,14 +9,13 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Script.Serialization;
 using System.Xml.Serialization;
-using webapplication;
 using WebApplication5.POCO;
 using WebApplication5.Services;
 
 
 namespace WebApplication5.Controllers
 {
-    public class MomController : ApiController
+    public class MomController : BaseController
     {
 
         MomService service = new MomService();
@@ -26,7 +27,7 @@ namespace WebApplication5.Controllers
         {
             try
             {
-                return Ok<List<project>>(service.Getproject());
+                return Ok<List<ProjectInfo>>(service.Getproject());
             }
            
             catch (Exception)
@@ -53,7 +54,7 @@ namespace WebApplication5.Controllers
             //if (deseralizedObject != null)
             //    result = deseralizedObject["id"];
 
-            return Ok<List<User>>(service.Getlist(id));
+            return Ok<List<UserInfo>>(service.Getlist(id));
 
         }
 
@@ -70,35 +71,7 @@ namespace WebApplication5.Controllers
 
 
 
-        protected T BindModel<T>(HttpRequestMessage request, bool isJsonFormat = true)
-        {
-            try
-            {
-                ///Getting Json object from httprequest message       
-                string content = request.Content.ReadAsStringAsync().Result;
-                T serializedObject;
-
-                if (isJsonFormat)
-                {
-                    ///Converting JSON object to actual model
-                    serializedObject = new JavaScriptSerializer().Deserialize<T>(content);
-                }
-                else
-                {
-                    XmlSerializer serializer = new XmlSerializer(typeof(T));
-                    using (TextReader reader = new StringReader(content))
-                    {
-                        serializedObject = (T)serializer.Deserialize(reader);
-                    }
-                }
-                return serializedObject;
-
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-
-        }
+      
+        
     }
 }
