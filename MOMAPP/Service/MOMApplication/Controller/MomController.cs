@@ -1,5 +1,6 @@
 ﻿using MOMApplication.Controllers;
 using MOMApplication.POCOS;
+using MOMApplication.Services;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,8 +10,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Script.Serialization;
 using System.Xml.Serialization;
-using WebApplication5.POCO;
-using WebApplication5.Services;
+
 
 
 namespace WebApplication5.Controllers
@@ -19,8 +19,6 @@ namespace WebApplication5.Controllers
     {
 
         MomService service = new MomService();
-
-
        
         [HttpPost]
         public IHttpActionResult Getproject()
@@ -42,7 +40,7 @@ namespace WebApplication5.Controllers
         public IHttpActionResult Savemom(HttpRequestMessage request)
         {
             SaveMom response = BindModel<SaveMom>(request);
-            return Ok<bool>(service.savemom(response));
+            return Ok<bool>(service.SaveMom(response));
         }
 
 

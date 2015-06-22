@@ -1,22 +1,19 @@
-﻿using System;
+﻿using MOMApplication.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using webapplication;
-using WebApplication5.POCO;
 
 
-namespace WebApplication5.Repositories
+
+namespace MOMApplication.Repository
 {
-
     public class MomRepository 
     {
-
-
         MOMEntities db = new MOMEntities();
 
         //getting project
-        public List<tblProjectInfo> Getproject()
+        public List<tblProjectInfo> GetProject()
         {
             try
             {
@@ -43,7 +40,7 @@ namespace WebApplication5.Repositories
 
 
         //save mom form
-        public bool savemom(tblMom mom)
+        public bool SaveMom(tblMom mom)
         {
            
             db.tblMoms.Add(mom);
@@ -74,7 +71,7 @@ namespace WebApplication5.Repositories
 
         //getting mom
 
-        public tblMom Getmom(DateTime date)
+        public tblMom GetMom(DateTime date)
         {
 
             var history = db.tblMoms.Where(a => a.CreationDate == date).FirstOrDefault();
