@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
 }
 
 <h2>Index</h2>
@@ -7,6 +8,7 @@
 <head runat="server">
     <title></title>
     <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <link href="~/Scripts/bootstrap.css" rel="stylesheet" />
   
 
@@ -29,8 +31,13 @@
                 </div>
                 <div class="col-lg-4" style="text-align:center" id="divresult">
                   @*<label for="comment">Employee List:</label></br>*@
-                    <table id="tbl"></table>
-                </div>
+                    <br/><br/>
+                    <label for="comment">Employee List:</label></br>
+                    <select name="List" id="List" multiple="multiple" class="form-control">
+
+                    </select>
+                        <table id="tbl"></table>
+</div>
 
             </div>
             <input type="submit" id="btn" class="btn btn-info" value="Send">
@@ -56,7 +63,7 @@
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "http://localhost:64700/api/Mom/Savemom",
+                url: "http://localhost:50933/api/Mom/Savemom",
                 data: JSON.stringify(source),
                 success: function (data) {
                     window.location.href = "Index";
@@ -72,7 +79,7 @@
         jQuery.support.cors = true;
         $.ajax({
             type: "POST",
-            url: "http://localhost:64700/api/Mom/Getproject",
+            url: "http://localhost:50933/api/Mom/Getproject",
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'text/plain'
@@ -80,7 +87,7 @@
             dataType: 'json',
             success: function (data) {
                 var result = data;
-                //alert(result.length);
+                alert(result.length);
                 $("#dropdown").append(
                        $('<option/>', {
                            value: 0,
@@ -105,7 +112,7 @@
                     //alert(id);    
                 $.ajax({
                     type: 'POST',
-                    url: "http://localhost:64700/api/Mom/Getlist?id=" + id,
+                    url: "http://localhost:50933/api/Mom/Getlist?id=" + id,
                     //contentType: 'application/json; charset=utf-8',
                     dataType: 'json',
                     success: function (data) {
@@ -114,9 +121,16 @@
                           
                             var strResult = "<table><th>EmployeeList</th>";
                            for (var i = 0; i < data.length; i++){
-                                strResult += "<tr><td>" + data[i].UserName + "</td></tr> </br>"
-                                strResult += "</table>";
-                                $("#divresult").html(strResult);
+                                //strResult += "<tr><td>" + data[i].UserName + "</td></tr> </br>"
+                                //strResult += "</table>";
+                               //$("#divresult").html(strResult);
+
+                               $("#List").append(
+                        $('<option/>', {
+                           // value: data[i].ProjectID,
+                            text: data[i].UserName
+                        })
+                    );
                             }
                           
                         }
