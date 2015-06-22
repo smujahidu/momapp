@@ -1,110 +1,55 @@
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\ClientApp.dll.config
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\ClientApp.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\ClientApp.pdb
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Antlr3.Runtime.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\EntityFramework.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\EntityFramework.SqlServer.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Newtonsoft.Json.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Owin.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.Helpers.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.Mvc.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.Optimization.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.Razor.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.WebPages.Deployment.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.WebPages.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.WebPages.Razor.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\WebGrease.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.Helpers.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.Mvc.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.Optimization.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.Razor.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.WebPages.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.WebPages.Deployment.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\System.Web.WebPages.Razor.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Newtonsoft.Json.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Antlr3.Runtime.pdb
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\EntityFramework.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\EntityFramework.SqlServer.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\obj\Debug\ClientApp.csprojResolveAssemblyReference.cache
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\obj\Debug\ClientApp.dll
-C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\ClientApp\ClientApp\obj\Debug\ClientApp.pdb
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\ClientApp.dll.config
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\ClientApp.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\ClientApp.pdb
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Antlr3.Runtime.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\EntityFramework.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\EntityFramework.SqlServer.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Google.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Web.Infrastructure.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Newtonsoft.Json.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Owin.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.Helpers.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.Mvc.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.Optimization.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.Razor.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.Deployment.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.Razor.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\WebGrease.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.Helpers.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.Mvc.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.Optimization.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.Razor.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.Deployment.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.Razor.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Newtonsoft.Json.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Antlr3.Runtime.pdb
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\EntityFramework.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\EntityFramework.SqlServer.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Google.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\obj\Debug\ClientApp.csprojResolveAssemblyReference.cache
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\obj\Debug\ClientApp.dll
-C:\Mom\Mom application\MOMAPP\Client\ClientApp\obj\Debug\ClientApp.pdb
+C:\POC\MOMAPP\Client\ClientApp\bin\ClientApp.dll.config
+C:\POC\MOMAPP\Client\ClientApp\bin\ClientApp.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\ClientApp.pdb
+C:\POC\MOMAPP\Client\ClientApp\bin\Antlr3.Runtime.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\EntityFramework.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\EntityFramework.SqlServer.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Google.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Web.Infrastructure.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Newtonsoft.Json.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\Owin.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.Helpers.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.Mvc.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.Optimization.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.Razor.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.Deployment.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.Razor.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\WebGrease.dll
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.Helpers.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.Mvc.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.Optimization.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.Razor.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.Deployment.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\System.Web.WebPages.Razor.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Newtonsoft.Json.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Antlr3.Runtime.pdb
+C:\POC\MOMAPP\Client\ClientApp\bin\EntityFramework.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\EntityFramework.SqlServer.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Google.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\POC\MOMAPP\Client\ClientApp\obj\Debug\ClientApp.csprojResolveAssemblyReference.cache
+C:\POC\MOMAPP\Client\ClientApp\obj\Debug\ClientApp.dll
+C:\POC\MOMAPP\Client\ClientApp\obj\Debug\ClientApp.pdb
