@@ -18,50 +18,76 @@
             debugger;
             $.ajax({
                 url: 'http://localhost:50933/api/Admin/GetRole',
-            type: 'POST',
-            crossDomain: true, // enable this
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'text/plain'
-            },
-            //contentType: "application/json; charset=utf-8",
-            dataType: 'json',
-            //data: '{}',
-              
-            success: function (data) {
-                var result =data;
-                alert(result.length);
-                //$.each(data.d, function(key, value) {
-                //    $("#ddlRole").append($("<option></option>").val(value.RoleID).html(value.RoleName));
-                //});
-                $("#ddlRole").append(
-                        $('<option/>', {
-                            value: 0,
-                            text: "select"
-                        })
-                    );
-                for (var i = 0; i < result.length; i++) {
+                type: 'POST',
+                crossDomain: true, // enable this
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'text/plain'
+                },
+                //contentType: "application/json; charset=utf-8",
+                dataType: 'json',
+                //data: '{}',
+
+                success: function (data) {
+                    var result = data;
+
                     $("#ddlRole").append(
-                        $('<option/>', {
-                            value: result[i].RoleID,
-                            text: result[i].RoleName
-                        })
-                    );
+                            $('<option/>', {
+                                value: 0,
+                                text: "select"
+                            })
+                        );
+                    for (var i = 0; i < result.length; i++) {
+                        $("#ddlRole").append(
+                            $('<option/>', {
+                                value: result[i].RoleID,
+                                text: result[i].RoleName
+                            })
+                        );
+                    }
+                    //$.each(result, function () {
+                    //    alert(resultRoleID );
+                    //    $("#ddlRole").append(
+                    //        $('<option/>', {
+                    //            value: this.RoleID,
+                    //            text: this.RoleName
+                    //        })
+                    //    );
+                    //});
+                },
+                error: function ajaxError(response) {
+                    alert(response.status + ' ' + response.statusText);
                 }
-                //$.each(result, function () {
-                //    alert(resultRoleID );
-                //    $("#ddlRole").append(
-                //        $('<option/>', {
-                //            value: this.RoleID,
-                //            text: this.RoleName
-                //        })
-                //    );
-                //});
-            },
-            error: function ajaxError(response) {
-                alert(response.status + ' ' + response.statusText);
-            }
-        });
+            });
+
+            //Code For Project
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:50933/api/Mom/Getproject",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'text/plain'
+                },
+                dataType: 'json',
+                success: function (data) {
+                    var result = data;
+                   // alert(result.length);
+                    $("#ddlProject").append(
+                           $('<option/>', {
+                               value: 0,
+                               text: "select"
+                           })
+                       );
+                    for (var i = 0; i < data.length; i++) {
+                        $("#ddlProject").append(
+                            $('<option/>', {
+                                value: data[i].ProjectID,
+                                text: data[i].ProjectName
+                            })
+                        );
+                    }
+                }
+            });
 
         function AddUser() {
             jQuery.support.cors = true;
@@ -109,7 +135,7 @@
                         <input class="form-control" name="EmailId" id="email" placeholder="EmailId" type="text" /> <br />
 
                         <label for=""> Project</label>
-                        <select class="form-control"></select>
+                        <select class="form-control" id="ddlProject"></select>
 
                         <label for=""> Role</label>
                         <select class="form-control" id="ddlRole"></select>

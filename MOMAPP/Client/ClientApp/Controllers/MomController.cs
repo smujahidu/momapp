@@ -16,6 +16,11 @@ namespace ClientApp.Controllers
             return View();
         }
 
+        public ActionResult CreateDoc()
+        {
+            return View();
+        }
+
         public ActionResult History()
         {
             return View();
