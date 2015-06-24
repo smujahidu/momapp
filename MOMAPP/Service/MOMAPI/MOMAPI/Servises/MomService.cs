@@ -44,6 +44,7 @@ namespace MOMAPI.Servises
         public tblMom converttomom(SaveMom momform)
         {
             tblMom dbmodel = new tblMom();
+            dbmodel.ProjectID = momform.ProjectID;
             dbmodel.Subject = momform.Subject;
             dbmodel.Description = momform.Description;
             return dbmodel;
