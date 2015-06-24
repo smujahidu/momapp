@@ -93,12 +93,8 @@
             });
 
 
-
-
-
-
-            jQuery.support.cors = true;
-            $("#dropdown").on('change', function () {
+            $("#ddlProject").on('change', function () {
+                $("#List").empty();
                 var id = $(this).val();
                 //alert(id);
                 $.ajax({
@@ -107,7 +103,7 @@
                     //contentType: 'application/json; charset=utf-8',
                     dataType: 'json',
                     success: function (data) {
-                        alert(JSON.stringify(data))
+                       // alert(JSON.stringify(data))
                         if (data != null) {
 
                             var strResult = "<table><th>EmployeeList</th>";
@@ -145,7 +141,7 @@
                 <div class="col-lg-8">
                     <div style="text-align:center">
                         <label for="comment">Select Project:</label>
-                        <select id="dropdown"></select>
+                        <select id="ddlProject"></select>
                     </div><br/>
                     <div class="form-group">
                         <div class='input-group date' id='datetimepicker1'>
@@ -154,9 +150,9 @@
                                 <span class="glyphicon glyphicon-calendar"></span>
                             </span>
                         </div>
-                        <label for="comment">Subject:</label></br>
+                        <label for="comment" id="Subject">Subject:</label></br>
                         <input class="form-control" name="UserName" id="sub" placeholder="Subject" type="text" />
-                        <label for="comment">Description:</label></br>
+                        <label for="comment" id="Body">Description:</label></br>
                         <textarea class="form-control" rows="5" id="description"></textarea>
                     </div>
                 </div>
