@@ -61,20 +61,12 @@ namespace MOMAPI.Controllers
         [HttpPost]
         public IHttpActionResult Getmom(HttpRequestMessage request)
         {
-            Dictionary<string, DateTime> deseralizedObject = BindModel<Dictionary<string, DateTime>>(request);
-            DateTime date = deseralizedObject["CreationDate"];
-            return Ok<SaveMom>(service.histoty(date));
+            SaveMom response = BindModel<SaveMom>(request);
+            return Ok<SaveMom>(service.histoty(response));
 
         }
 
-        [HttpPost]
-        public IHttpActionResult SendMail(HttpRequestMessage request)
-        {
-            SendMail response = BindModel<SendMail>(request);
-            return Ok<bool>(service.SendMail(response));
-
-        }
-
+       
 
        
     }

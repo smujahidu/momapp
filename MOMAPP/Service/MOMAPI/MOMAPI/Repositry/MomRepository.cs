@@ -1,4 +1,5 @@
 ﻿using MOMAPI.Models;
+using MOMAPI.POCOS;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -72,10 +73,11 @@ namespace MOMAPI.Repositry
 
         //getting mom
 
-        public tblMom Getmom(DateTime date)
+        public tblMom Getmom(SaveMom data)
         {
 
-            var history = db.tblMoms.Where(a => a.CreationDate == date).FirstOrDefault();
+            //var history = db.tblMoms.Where(a => a.ProjectID.Equals(data.ProjectID) && a.CreationDate.Equals(data.CreationDate)).SingleOrDefault();
+            var history = db.tblMoms.Where(a => a.ProjectID == data.ProjectID && a.CreationDate == data.CreationDate).SingleOrDefault();
 
             tblMom mom = new tblMom();
 
