@@ -67,7 +67,13 @@ namespace MOMAPI.Controllers
 
         }
 
+        [HttpPost]
+        public IHttpActionResult SendMail(HttpRequestMessage request)
+        {
+            SendMail response = BindModel<SendMail>(request);
+            return Ok<bool>(service.SendMail(response));
 
+        }
 
 
        
