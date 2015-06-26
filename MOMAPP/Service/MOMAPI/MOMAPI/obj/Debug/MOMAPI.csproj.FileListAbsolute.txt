@@ -34,3 +34,75 @@ C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPI\MOMAP
 C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPI\MOMAPI\obj\Debug\MOMAPI.dll
 C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPI\MOMAPI\obj\Debug\MOMAPI.pdb
 C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPI\MOMAPI\obj\Debug\MOMAPI.csprojResolveAssemblyReference.cache
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\MOMAPI.dll.config
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\MOMAPI.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\MOMAPI.pdb
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\Antlr3.Runtime.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\EntityFramework.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\Newtonsoft.Json.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Helpers.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Http.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Mvc.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Optimization.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Razor.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\WebGrease.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\EntityFramework.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\Newtonsoft.Json.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Helpers.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Http.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Mvc.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Optimization.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Razor.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\bin\Antlr3.Runtime.pdb
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\obj\Debug\MOMAPI.dll
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\obj\Debug\MOMAPI.pdb
+C:\Users\mufassils\Documents\Visual Studio 2013\Projects\MOMProject\MOMAPP\Service\MOMAPI\MOMAPI\obj\Debug\MOMAPI.csprojResolveAssemblyReference.cache
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\MOMAPI.dll.config
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\MOMAPI.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\MOMAPI.pdb
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\Antlr3.Runtime.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\EntityFramework.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\EntityFramework.SqlServer.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\Newtonsoft.Json.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Net.Http.Formatting.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Helpers.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Http.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Http.WebHost.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Mvc.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Optimization.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Razor.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.Deployment.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.Razor.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\WebGrease.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\EntityFramework.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\EntityFramework.SqlServer.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\Newtonsoft.Json.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Net.Http.Formatting.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Helpers.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Http.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Http.WebHost.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Mvc.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Optimization.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.Razor.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.Deployment.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\System.Web.WebPages.Razor.xml
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\bin\Antlr3.Runtime.pdb
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\obj\Debug\MOMAPI.csprojResolveAssemblyReference.cache
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\obj\Debug\MOMAPI.dll
+C:\POC\MOMAPP\Service\MOMAPI\MOMAPI\obj\Debug\MOMAPI.pdb

@@ -47,6 +47,7 @@ namespace MOMAPI.Servises
             dbmodel.ProjectID = momform.ProjectID;
             dbmodel.Subject = momform.Subject;
             dbmodel.Description = momform.Description;
+            dbmodel.CreationDate = momform.CreationDate;
             return dbmodel;
 
         }
