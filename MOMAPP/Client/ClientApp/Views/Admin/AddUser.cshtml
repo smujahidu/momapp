@@ -1,128 +1,26 @@
 ﻿
 @{
     ViewBag.Title = "AddUser";
-    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
 }
-
-<title></title>
-<link href="~/Scripts/bootstrap.css" rel="stylesheet" />
-<script src="~/Scripts/jquery-1.10.2.min.js"></script>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head >
     <title></title>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            debugger;
-            $.ajax({
-                url: 'http://localhost:50933/api/Admin/GetRole',
-                type: 'POST',
-                crossDomain: true, // enable this
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'text/plain'
-                },
-                //contentType: "application/json; charset=utf-8",
-                dataType: 'json',
-                //data: '{}',
-
-                success: function (data) {
-                    var result = data;
-
-                    $("#ddlRole").append(
-                            $('<option/>', {
-                                value: 0,
-                                text: "select"
-                            })
-                        );
-                    for (var i = 0; i < result.length; i++) {
-                        $("#ddlRole").append(
-                            $('<option/>', {
-                                value: result[i].RoleID,
-                                text: result[i].RoleName
-                            })
-                        );
-                    }
-                    //$.each(result, function () {
-                    //    alert(resultRoleID );
-                    //    $("#ddlRole").append(
-                    //        $('<option/>', {
-                    //            value: this.RoleID,
-                    //            text: this.RoleName
-                    //        })
-                    //    );
-                    //});
-                },
-                error: function ajaxError(response) {
-                    alert(response.status + ' ' + response.statusText);
-                }
-            });
-
-            //Code For Project
-            $.ajax({
-                type: "POST",
-                url: "http://localhost:50933/api/Mom/Getproject",
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'text/plain'
-                },
-                dataType: 'json',
-                success: function (data) {
-                    var result = data;
-                   // alert(result.length);
-                    $("#ddlProject").append(
-                           $('<option/>', {
-                               value: 0,
-                               text: "select"
-                           })
-                       );
-                    for (var i = 0; i < data.length; i++) {
-                        $("#ddlProject").append(
-                            $('<option/>', {
-                                value: data[i].ProjectID,
-                                text: data[i].ProjectName
-                            })
-                        );
-                    }
-                }
-            });
-
-        function AddUser() {
-            jQuery.support.cors = true;
-            var User = {
-                UserName: $('#uname').val(),
-                Password: $('#pwd').val(),
-                Email: $('#email').val()
-            };
-
-            $.ajax({
-                url: 'http://localhost:50933/api/Admin/User',
-                type: 'POST',
-
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'text/plain'
-                },
-
-                contentType: "application/json;charset=utf-8",
-                data: JSON.stringify(User),
-                success: function (data) {
-
-                },
-            });
-        }
-        });
-    </script>
+    <link href="~/Scripts/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/Admin/AddUser.js"></script>
 </head>
 <body>
+
     <form id="form1">
         <div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well well-sm">
 
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 well-sm"  >
+                <div class="row" >
+                   
+                    <div  style="width:30%;margin-left:350px">
                         <br />
                         <br />
 
@@ -130,7 +28,7 @@
                         <label for=""> UserName</label>
                         <input class="form-control" name="UserName" id="uname" placeholder="UserName" type="text" /> <br />
                         <label for=""> Password</label>
-                        <input class="form-control" name="Password" id="pwd" placeholder="Password" type="text" /> <br />
+                        <input class="form-control" name="Password" id="pwd" placeholder="Password" type="password" /> <br />
                         <label for=""> EmailID</label>
                         <input class="form-control" name="EmailId" id="email" placeholder="EmailId" type="text" /> <br />
 
@@ -140,7 +38,9 @@
                         <label for=""> Role</label>
                         <select class="form-control" id="ddlRole" style="width:50%"></select>
                         <br />
-                        <button class="btn btn-lg btn-primary btn-block" id="btn" type="submit" onclick="AddUser()"> ADD </button>
+                        <div align="center">
+                            <input type="submit" value=" Save " class="btn btn-info" id="btnSave" style="width:100px" />
+                        </div>
                     </div>
                 </div>
             </div>

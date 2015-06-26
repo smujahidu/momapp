@@ -1,4 +1,4 @@
-/*!
+/*!btn btn-info
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -1085,7 +1085,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
+  color: inherit;
   background-color: #fff;
 }
 input,
@@ -1097,7 +1097,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: black;
   text-decoration: none;
 }
 a:hover,
@@ -2558,7 +2558,7 @@ output {
   color: #555;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid Black;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -3255,18 +3255,18 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
   color: #fff;
-  background-color: #5bc0de;
+  background-color: black;
   border-color: #46b8da;
 }
 .btn-info:focus,
 .btn-info.focus {
   color: #fff;
-  background-color: #31b0d5;
+  background-color: black;
   border-color: #1b6d85;
 }
 .btn-info:hover {
   color: #fff;
-  background-color: #31b0d5;
+  background-color: black;
   border-color: #269abc;
 }
 .btn-info:active,
@@ -3950,8 +3950,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #555;
   text-align: center;
-  background-color: #eee;
-  border: 1px solid #ccc;
+  background-color: gray;
+  border: 1px solid black;
   border-radius: 4px;
 }
 .input-group-addon.input-sm {
@@ -5495,7 +5495,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel {
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: lightgray;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -5783,12 +5783,12 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #d6e9c6;
 }
 .panel-info {
-  border-color: #bce8f1;
+  border-color: black;
 }
 .panel-info > .panel-heading {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  color: white;
+  background-color: grey;
+  border-color: black;
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #bce8f1;
@@ -5866,8 +5866,8 @@ button.list-group-item-danger.active:focus {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
+  background-color: lightgray;
+  border: 1px solid black;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);

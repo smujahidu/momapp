@@ -9,51 +9,16 @@
     <link href="~/Scripts/bootstrap.css" rel="stylesheet" />
    @* <script src="~/Scripts/OurScripts/Login.js"></script>*@
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#btn-login").click(function () {
-           
-                var user = {
-                    UserName: $('#login-username').val(),
-                    Password: $('#login-password').val()
-                }
-                
-                
-                debugger;
-                $.ajax({
-                    url: 'http://localhost:50933/api/Login/login',
-                    type: 'POST',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'text/plain'
-                    },
-                    //contentType: 'application/json;charset=utf-8',
-                    dataType: 'json',
-                    data: JSON.stringify(user),
-                    success: function (data) {
-                        if(data.RoleID==1)
-                            window.location.href = "http://localhost:58405/Admin/Index";
-                        else
-                            window.location.href = "http://localhost:58405/Mom/Index";
-                        
-                    },
-                    error: function (x, y, z) {
-                        alert(x + '\n' + y + '\n' + z);
-                    }
-                });
-            });
-           
+    <script src="~/Scripts/Login/Login.js"></script>
 
 
 
-        });
-    </script>
     @*Code for Designig*@
 
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" style="width:1170px">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">WebSiteName</a>
+            <a class="navbar-brand" href="#"></a>
         </div>
         <div>
             <ul class="nav navbar-nav">
@@ -102,8 +67,8 @@
                         <div style="margin-top:10px" class="form-group">
                             <!-- Button -->
 
-                            <div class="col-sm-12 controls">
-                                <a id="btn-login"  class="btn btn-success">Login  </a>
+                            <div align="center">
+                                <a id="btn-login" class="btn btn-info" style="width:100px">Login  </a>
                                 @*<input type="submit" value="Sign In" onclick="SignIN()" class="btn btn-success" />*@
                             </div>
                         </div>

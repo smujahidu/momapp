@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Title = "CreateDoc";
-    Layout = "~/Views/Shared/UserLayout.cshtml";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
 }
 
 
@@ -9,12 +9,10 @@
     <title></title>
     <link href="~/Scripts/bootstrap.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 
@@ -23,116 +21,12 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
     <link href="~/Scripts/OurScripts/editor.css" rel="stylesheet" />
-
+    <link href="~/Scripts/bootstrap.css" rel="stylesheet" />
     <script src="~/Scripts/OurScripts/editor.js"></script>
+    <script src="~/Scripts/Mom/CreateMom.js"></script>
 
 
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            $("#description").Editor()
-            $("#datepicker").datepicker();
-
-            $.ajax({
-                type: "POST",
-                url: "http://localhost:50933/api/Mom/Getproject",
-                crossDomain: true,
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'text/plain'
-                },
-                //contentType: "application/json; charset=utf-8",
-                dataType: 'json',
-                
-                success: function (data) {
-                    var result = data;
-                    // alert(result.length);
-                    $("#ddlProject").append(
-                           $('<option/>', {
-                               value: 0,
-                               text: "select"
-                           })
-                       );
-                    for (var i = 0; i < data.length; i++) {
-                        $("#ddlProject").append(
-                            $('<option/>', {
-                                value: data[i].ProjectID,
-                                text: data[i].ProjectName
-                            })
-                        );
-                    }
-                }
-            });
-
-
-            $("#btn").click(function () {
-                var Subject1 = $("#sub").val();
-                var Description1 = $("#description").val();
-                var json = {}
-                json.Subject = Subject1
-                json.Description = Description1
-                var source = {
-                    'Subject': $("#sub").val(),
-                    'Description': $("#description").val()
-                }
-
-
-                $.ajax({
-                    type: "POST",
-                    dataType: "json",
-                    url: "http://localhost:50933/api/Mom/Savemom",
-                    data: JSON.stringify(source),
-                    success: function (data) {
-                        window.location.href = "CreateDoc";
-                    },
-                    error: function (error) {
-                        jsonValue = jQuery.parseJSON(error.responseText);
-
-                    }
-                });
-            });
-
-
-            $("#ddlProject").on('change', function () {
-                $("#List").empty();
-                var id = $(this).val();
-                //alert(id);
-                $.ajax({
-                    type: 'POST',
-                    url: "http://localhost:50933/api/Mom/Getlist?id=" + id,
-                    //contentType: 'application/json; charset=utf-8',
-                    dataType: 'json',
-                    success: function (data) {
-                       // alert(JSON.stringify(data))
-                        if (data != null) {
-
-                            var strResult = "<table><th>EmployeeList</th>";
-                            for (var i = 0; i < data.length; i++) {
-                                //strResult += "<tr><td>" + data[i].UserName + "</td></tr> </br>"
-                                //strResult += "</table>";
-                                //$("#divresult").html(strResult);
-
-                                $("#List").append(
-                         $('<option/>', {
-                             // value: data[i].ProjectID,
-                             text: data[i].UserName
-                         })
-                     );
-                            }
-
-                        }
-                    },
-                    error: function (msg) {
-                        alert(msg.nodata);
-                    }
-                });
-            });
-
-
-        });
-
-    </script>
+    
 
 </head>
 <body>
@@ -141,28 +35,28 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well well-sm">
           <div class="row">
               <div class="col-lg-8">
-                  <div style="text-align:center">
+                  <div align="center">
                       <label for="comment">Select Project:</label>
-                      <select id="ddlProject"></select>
+                      <select id="ddlProject" class="form-control" style="width:150px"></select>
                   </div><br />
-                  <label for="comment" id="Subject">Date:</label></br>
-                  <input type="text" id="datepicker"><br />
-                  <label for="comment" id="Subject">Subject:</label></br>
-                  <input class="form-control" name="UserName" id="sub" placeholder="Subject" type="text" />
+                  <label for="comment"  >Date:</label></br>
+                  <input type="text" id="datepicker" class="form-control" style="width:250px"><br />
+                  <label for="comment" >Subject:</label></br>
+                  <input class="form-control" name="UserName" id="subject" type="text" />
                   <label for="comment" id="Body">Description:</label></br>
-                  <textarea class="form-control" rows="5" id="description"></textarea>
+                  <textarea class="form-control" rows="5" id="messageBody"></textarea>
               </div>
 
               <div class="col-lg-4" style="text-align:center" id="divresult">
                   @*<label for="comment">Employee List:</label></br>*@
-                  <br /><br />
+                  <br /><br /><br /><br />
                   <label for="comment">Employee List:</label></br>
                   <select name="List" id="List" multiple="multiple" class="form-control"></select>
                   <table id="tbl"></table>
               </div>
           </div><br/>
           <div style="text-align:center">
-          <input type="submit" id="btn" class="btn btn-info" value=" Save ">
+              <input type="submit" id="btn" class="btn btn-info" value="Save" style="width:100px">
           </div>
         </div>
             

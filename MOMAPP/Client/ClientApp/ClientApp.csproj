@@ -161,7 +161,6 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MomController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -177,13 +176,26 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Back%2802%29.jpg" />
+    <Content Include="Images\black_footer.png" />
     <Content Include="Images\Green_Header.jpg" />
     <Content Include="Images\hero_header.jpg" />
     <Content Include="Images\curve-header.png" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Scripts\Admin\AddProject.js" />
+    <Content Include="Scripts\Admin\AddUser.js" />
     <Content Include="Scripts\bootstrap.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Login\Login.js" />
+    <Content Include="Scripts\Mom\CreateMom.js" />
+    <Content Include="Scripts\Mom\History.js" />
+    <Content Include="Scripts\OurScripts\bootstrap-datetimepicker.css" />
+    <Content Include="Scripts\OurScripts\bootstrap-datetimepicker.min.css" />
+    <Content Include="Scripts\OurScripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\OurScripts\editor.css" />
+    <Content Include="Scripts\OurScripts\editor.js" />
     <Content Include="Scripts\OurScripts\GlobalSheet.css" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -193,6 +205,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Layout\MainLayout.js" />
     <Content Include="Scripts\OurScripts\Login.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -210,16 +223,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_AppLayout.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
-    <Content Include="Views\Shared\AdminLayout.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Admin\AddUser.cshtml" />
     <Content Include="Views\Admin\AddProject.cshtml" />
-    <Content Include="Views\Shared\UserLayout.cshtml" />
-    <Content Include="Views\User\Index.cshtml" />
-    <Content Include="Views\User\CreateDoc.cshtml" />
     <Content Include="Views\Mom\History.cshtml" />
     <Content Include="Views\Mom\Index.cshtml" />
+    <Content Include="Views\Mom\CreateDoc.cshtml" />
+    <Content Include="Views\Shared\MainLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

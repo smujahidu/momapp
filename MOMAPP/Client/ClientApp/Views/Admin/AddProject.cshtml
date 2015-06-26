@@ -1,79 +1,61 @@
 ﻿
 @{
     ViewBag.Title = "AddProject";
-    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
 }
 
 
-<title></title>
-<link href="~/Scripts/bootstrap.css" rel="stylesheet" />
-<script src="~/Scripts/jquery-1.10.2.min.js"></script>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#datepicker").datepicker();
-
-        function SaveProject() {
-            jQuery.support.cors = true;
-            var projdetails = {
-                ProjectName: $('#txtaddEmpName').val(),
-                StartDate: $('#datepicker').val(),
-                Status: $('#txtaddstatus').val()
-            };
-
-            $.ajax({
-                url: 'http://localhost:50933/api/Admin/SaveProject/3',
-                type: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'text/plain'
-                },
-
-                data: JSON.stringify(projdetails),
-                contentType: "application/json;charset=utf-8",
-                success: function (data) {
-
-                },
-
-            });
-        }
-    });
-</script>
 
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head>
     <title></title>
+    <link href="~/Scripts/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="~/Scripts/Admin/AddProject.js"></script>
+
+
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1">
         <div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well well-sm">
 
-                <div class="row" >
-                    <div class="col-xs-12 col-sm-12 col-md-4 well-sm" >
+                <div class="row">
+
+                    <div style="width:30%;margin-left:350px">
                         <br />
                         <br />
 
-                        <h3 style="text-align:center">ADD PROJECT</h3></br>
-                        <label for=""> UserName</label>
-                        <input class="form-control" name="ProjectName" id="txtaddEmpName" placeholder="ProjectName" type="text" /> <br />
+                        <h3 style="text-align:center">ADD USER</h3></br>
+                        <label for=""> Project Name</label>
+                        <input name="ProjectName" id="txtaddEmpName" placeholder="Project Name" type="text" class="form-control" style="width:300px" />
+                        
+                        <label for="comment" id="Subject">Start Date</label>
+                        <input type="text" id="datepicker" class="form-control" style="width:300px" placeholder="Start Date"> 
+
                         <label for=""> Status</label>
-                        <input class="form-control" name="Status" id="txtaddstatus" placeholder="Status" type="text" /> <br />
+                        <select id="ddlStatus" class="form-control" style="width:150px" >
+                            <option style="display:none;">Select</option>
+                            <option value="True">Active</option>
+                            <option value="False">Completed</option>
+                        </select>
+                        <br/>
 
-                        <label for="comment" id="Subject">Start Date:</label></br>
-                        <input type="text" id="datepicker"><br />
-                        <br />
-                        <button class="btn btn-info" type="submit" onclick="SaveProject()">Save </button>
+                        
+                        <div align="center">
+                            <input type="submit" value=" Save " class="btn btn-info" id="btnSave" style="width:100px" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </form>
+    
 </body>
 </html>
 

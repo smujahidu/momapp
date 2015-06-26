@@ -50,6 +50,6 @@ C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.OAuth.xml
 C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Google.xml
 C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.Twitter.xml
 C:\POC\MOMAPP\Client\ClientApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\POC\MOMAPP\Client\ClientApp\obj\Debug\ClientApp.csprojResolveAssemblyReference.cache
 C:\POC\MOMAPP\Client\ClientApp\obj\Debug\ClientApp.dll
 C:\POC\MOMAPP\Client\ClientApp\obj\Debug\ClientApp.pdb
+C:\POC\MOMAPP\Client\ClientApp\obj\Debug\ClientApp.csprojResolveAssemblyReference.cache
